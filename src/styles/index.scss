@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+// variables
+$dark-blue: rgb(43, 57, 69);
+$very-dark-blue-bg: hsl(207, 26%, 17%);
+$very-dark-blue-text: hsl(200, 15%, 8%);
+$dark-gray: hsl(0, 0%, 52%);
+$very-light-gray: hsl(0, 0%, 98%);
+$white: rgb(255, 255, 255);
+
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 600;
+    color: $very-dark-blue-text;
+    font-size: 1rem;
+    background: $very-light-gray;
+    min-height: 100vh;
+
+    transition: color .3s ease-in;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    background: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+input{
+    background: none;
+}
+
+select{
+    background: none;
+    outline: none;
+    border: 0px;
+}
+
+._dark{
+    color: $white;
+    background-color: $very-dark-blue-bg;
+
+    transition: color .3s ease-in, background .2s ease-in;
+}
+
+._light-element{
+    background-color: $white;
+    color: $very-dark-blue-text;
+
+    transition: color .3s ease-in, background .2s ease-in;
+}
+
+._dark-element{
+    color: $white;
+    background: $dark-blue;
+
+    transition: color .3s ease-in, background .2s ease-in;
+
+    svg path{
+        fill: $white;
+    }
+}
+
+svg path{
+    transition: fill .3s ease-in;
+}
